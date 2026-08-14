@@ -33,9 +33,13 @@ jobs:
         top = feed.entries[:3]
 
         data = [
-            {"title": e.title, "link": e.link}
+            {
+                "title": e.title,
+                "description": getattr(e, "description", "").strip()
+            }
             for e in top
         ]
+
 
         with open("bbc.json", "w") as f:
             json.dump(data, f)
