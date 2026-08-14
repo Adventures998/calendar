@@ -32,13 +32,24 @@ jobs:
         feed = feedparser.parse("http://feeds.bbci.co.uk/news/rss.xml")
         top = feed.entries[:3]
 
+        import re
+        
+        def clean(text):
+            if not text:
+                return ""
+            # remove HTML tags
+            text = re.sub(r"<.*?>", "", text)
+            # collapse whitespace
+            return text.strip()
+        
         data = [
             {
                 "title": e.title,
-                "description": getattr(e, "description", "").strip()
+                "description": clean(getattr(e, "description", ""))
             }
             for e in top
         ]
+
 
 
         with open("bbc.json", "w") as f:
