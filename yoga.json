@@ -1,0 +1,29 @@
+{
+  "BedYoga": {
+    "Yoga 1": {
+      "movement": "Head flexion/extension",
+      "description": "Slow full up/down head movement",
+      "benefits": "Cervical mobility, vestibular activation"
+    },
+    "Yoga 2": {
+      "movement": "Arms‑overhead bicep touch",
+      "description": "Hands linked above head, nose touches each bicep",
+      "benefits": "Shoulder elevation, thoracic opening"
+    },
+    "Yoga 3": {
+      "movement": "Knee‑to‑chest pull",
+      "description": "One knee pulled gently toward chest, flex/point ankle",
+      "benefits": "Lumbar decompression, hip flexor release"
+    },
+    "Yoga 4": {
+      "movement": "Supine snow‑angel arms",
+      "description": "Arms slide outwards on the bed like a slow angel",
+      "benefits": "Chest opening, shoulder glide, rib expansion"
+    },
+    "Yoga 5": {
+      "movement": "Ankle flex‑point",
+      "description": "Slow flex/point cycles or circles",
+      "benefits": "Circulation boost, calf pump, nerve glide"
+    }
+  }
+}
