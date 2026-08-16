@@ -1,5 +1,5 @@
-{
-  "BedYoga": {
+[
+  {
     "Yoga 1": {
       "movement": "Head flexion/extension",
       "description": "Slow full up/down head movement",
@@ -26,4 +26,4 @@
       "benefits": "Circulation boost, calf pump, nerve glide"
     }
   }
-}
+]
