@@ -45,9 +45,10 @@ jobs:
             "https://api.open-meteo.com/v1/forecast?"
             f"latitude={lat}&longitude={lon}"
             "&current_weather=true"
-            "&daily=temperature_2m_max,temperature_2m_min,precipitation_sum"
+            "&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_mean"
             "&timezone=Europe/London"
         )
+
 
         r = requests.get(url)
         data = r.json()
