@@ -1,0 +1,40 @@
+[
+  {
+    "short monday": {
+      "task": "YOUR_NAME, as it is the start of your short week, I have a fun day for you planned"
+    },
+    "short tuesday": {
+      "task": "YOUR_NAME, today is a nice relaxing day for you"
+    },
+    "short wednesday": {
+      "task": "YOUR_NAME, to spice up midweek, I have an action-packed, exciting day planned"
+    },
+    "short thursday": {
+      "task": "YOUR_NAME, last day this week, and I have a mysterious day planned"
+    },
+    "short friday": {
+      "task": "YOUR_NAME, today is your non-working day"
+    },
+    "long monday": {
+      "task": "YOUR_NAME, as it is the start of your long week, I have a fun day for you planned"
+    },
+    "long tuesday": {
+      "task": "YOUR_NAME, today is a nice relaxing day for you"
+    },
+    "long wednesday": {
+      "task": "YOUR_NAME, to spice up midweek, I have an action-packed, exciting day planned"
+    },
+    "long thursday": {
+      "task": "YOUR_NAME, almost at the end of the week, let's spice things up with a fun day"
+    },
+    "long friday": {
+      "task": "YOUR_NAME, last day this week, and I have a mysterious day planned"
+    },
+    "saturday": {
+      "task": "YOUR_NAME, it is the weekend, time to get all those plans in place"
+    },
+    "sunday": {
+      "task": "YOUR_NAME, last day this week, a day of peace and rest"
+    }
+  }
+]
