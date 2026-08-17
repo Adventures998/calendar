@@ -2,7 +2,12 @@ name: BBC RSS Simplifier
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
+    # 30‑minute window in UTC that corresponds to UK 04:00–07:00 during BST
+    - cron: "0,30 3-6 * * *"
+
+    # 2‑hour schedule for everything else
+    - cron: "0 */2 * * *"
+
   workflow_dispatch:         # allows manual run
 
 permissions:
