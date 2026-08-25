@@ -1,0 +1,64 @@
+{
+  "schedule": [
+    {
+      "name": "Inflating Nappy Wake Up",
+      "time": "06:00 - 07:00",
+      "image": "https://i.postimg.cc/CK2ShNK3/Inflatable-Wake-Up-Nappy.jpg"
+    },
+    {
+      "name": "Breakfast",
+      "time": "07:00-08:00",
+      "image": "https://i.postimg.cc/Rqr2mqcM/1-Breakfast.jpg"
+    },
+    {
+      "name": "Break",
+      "time": "08:00-08:15",
+      "image": "https://i.postimg.cc/7P9XnWKz/1-Break-Time.png"
+    },
+    {
+      "name": "Supported Standing",
+      "time": "08:15-09:30",
+      "image": "https://i.postimg.cc/Fs3HLLCV/1-Standing.png"
+    },
+    {
+      "name": "Break",
+      "time": "09:30-09:45",
+      "image": "https://i.postimg.cc/7P9XnWKz/1-Break-Time.png"
+    },
+    {
+      "name": "Supported Standing",
+      "time": "09:45 - 11:30",
+      "image": "https://i.postimg.cc/Fs3HLLCV/1-Standing.png"
+    },
+    {
+      "name": "Lunch",
+      "time": "11:30 - 13:00",
+      "image": "https://i.postimg.cc/fTqRhMRv/1Lunch.jpg"
+    },
+    {
+      "name": "Motivation",
+      "time": "13:00 - 13:15",
+      "image": "https://i.postimg.cc/Gh1v7zDk/Motiv-v1.png"
+    },
+    {
+      "name": "Work",
+      "time": "13:15 - 14:30",
+      "image": "https://i.postimg.cc/h4HGvrsG/1Work.jpg"
+    },
+    {
+      "name": "Motivation",
+      "time": "14:30 - 14:45",
+      "image": "https://i.postimg.cc/tCCvvXWd/Motiv-v2.png"
+    },
+    {
+      "name": "Work",
+      "time": "14:45 - 16:50",
+      "image": "https://i.postimg.cc/h4HGvrsG/1Work.jpg"
+    },
+    {
+      "name": "Freedom",
+      "time": "16:50 - 20:00",
+      "image": "https://i.postimg.cc/h4HGvrsG/1Work.jpg"
+    }
+  ]
+}
