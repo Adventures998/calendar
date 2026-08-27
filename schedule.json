@@ -33,12 +33,12 @@
     {
       "name": "Lunch",
       "time": "11:30 - 13:00",
-      "image": "https://i.postimg.cc/fTqRhMRv/1Lunch.jpg"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lunch.png"
     },
     {
       "name": "Motivation",
       "time": "13:00 - 13:15",
-      "image": "https://i.postimg.cc/Gh1v7zDk/Motiv-v1.png"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/motivation.jpg"
     },
     {
       "name": "Work",
@@ -48,7 +48,7 @@
     {
       "name": "Motivation",
       "time": "14:30 - 14:45",
-      "image": "https://i.postimg.cc/tCCvvXWd/Motiv-v2.png"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/motivation.jpg"
     },
     {
       "name": "Work",
