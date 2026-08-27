@@ -42,8 +42,8 @@
     },
     {
       "name": "Work",
-      "time": "14:15 - 14:30",
-      "image": "https://i.postimg.cc/h4HGvrsG/1Work.jpg"
+      "time": "14:00 - 14:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing work.jpg"
     },
     {
       "name": "Motivation",
@@ -53,12 +53,12 @@
     {
       "name": "Work",
       "time": "14:45 - 16:50",
-      "image": "https://i.postimg.cc/h4HGvrsG/1Work.jpg"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing work.jpg"
     },
     {
       "name": "Freedom",
       "time": "16:50 - 20:00",
-      "image": "https://i.postimg.cc/h4HGvrsG/1Work.jpg"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/end.jpg"
     }
   ]
 }
