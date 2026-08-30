@@ -35,7 +35,7 @@ jobs:
         import feedparser, json
 
         feed = feedparser.parse("http://feeds.bbci.co.uk/news/rss.xml")
-        top = feed.entries[:3]
+        top = feed.entries[:9]
 
         import re
         
