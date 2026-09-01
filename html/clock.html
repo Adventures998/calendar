@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+    <style>
+      
+.clock_pos {
+}
+
+.clock {
+  display: flex;
+}
+
+.clock .divider {
+  font-size: 40px;
+  line-height: 61px;
+  font-style: normal;
+}
+
+.clock .flip {
+  position: relative;
+  width: 36px;
+  height: 60px;
+  margin: 1px;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  background: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* basic */
+.clock .flip .digital::before,
+.clock .flip .digital::after {
+  position: absolute;
+  content: attr(data-number);
+  left: 0;
+  right: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  perspective: 160px;
+}
+
+.clock .flip .digital::before {
+  top: 0;
+  bottom: 50%;
+  border-bottom: 1px solid #666;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock .flip .digital::after {
+  top: 50%;
+  bottom: 0;
+  line-height: 0;
+  border-radius: 0 0 6px 6px;
+}
+
+/* stack */
+.clock .flip .back::before,
+.clock .flip .front::after {
+  z-index: 1;
+}
+
+.clock .flip .back::after {
+  z-index: 2;
+}
+
+.clock .flip .front::before {
+  z-index: 3;
+}
+
+/* animation */
+.clock .flip .back::after {
+  transform-origin: center top;
+  transform: rotateX(0.5turn);
+}
+
+.clock .flip.running .front::before {
+  transform-origin: center bottom;
+  animation: frontFlipDown 0.6s ease-in-out;
+  box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.3);
+  backface-visibility: hidden;
+}
+
+.clock .flip.running .back::after {
+  animation: backFlipDown 0.6s ease-in-out;
+}
+
+@keyframes frontFlipDown {
+  to {
+    transform: rotateX(0.5turn);
+  }
+}
+
+@keyframes backFlipDown {
+  to {
+    transform: rotateX(0);
+  }
+}
+    </style>
+  </head>
+  <body>
+<div class="clock_pos">
+<div class="clock">
+  
+  <div class="flip">
+    <div class="digital front" data-number="0"></div>
+    <div class="digital back" data-number="1"></div>
+  </div>
+  <div class="flip">
+    <div class="digital front" data-number="0"></div>
+    <div class="digital back" data-number="1"></div>
+  </div>
+  <em class="divider">:</em>
+  
+  <div class="flip">
+    <div class="digital front" data-number="0"></div>
+    <div class="digital back" data-number="1"></div>
+  </div>
+  <div class="flip">
+    <div class="digital front" data-number="0"></div>
+    <div class="digital back" data-number="1"></div>
+  </div>
+</div>
+  </div>
+
+  
+
+    <script>
+      class Flipper {
+  constructor(node, currentTime, nextTime) {
+    this.isFlipping = false;
+    this.flipNode = node;
+    this.frontNode = node.querySelector(".front");
+    this.backNode = node.querySelector(".back");
+    this.duration = 600;
+
+    this.setFrontTime(currentTime);
+    this.setBackTime(nextTime);
+  }
+
+  setFrontTime(time) {
+    this.frontNode.dataset.number = time;
+  }
+
+  setBackTime(time) {
+    this.backNode.dataset.number = time;
+  }
+
+  flipDown(currentTime, nextTime) {
+    if (this.isFlipping) return;
+
+    this.isFlipping = true;
+
+    this.setFrontTime(currentTime);
+    this.setBackTime(nextTime);
+
+    this.flipNode.classList.add("running");
+
+    setTimeout(() => {
+      this.flipNode.classList.remove("running");
+      this.isFlipping = false;
+      this.setFrontTime(nextTime);
+    }, this.duration);
+  }
+}
+
+function getTimeFromDate(date) {
+  return date.toTimeString().slice(0, 5).replace(":", "");
+}
+
+const flips = document.querySelectorAll(".flip");
+const now = new Date();
+
+const currentTime = getTimeFromDate(
+  new Date(now.getTime() - 60000)
+);
+
+const nextTime = getTimeFromDate(now);
+
+const flippers = [...flips].map(
+  (flip, i) => new Flipper(flip, currentTime[i], nextTime[i])
+);
+
+function updateClock() {
+  const now = new Date();
+
+  const previousTime = getTimeFromDate(
+    new Date(now.getTime() - 60000)
+  );
+
+  const currentTime = getTimeFromDate(now);
+
+  flippers.forEach((flipper, i) => {
+    if (previousTime[i] !== currentTime[i]) {
+      flipper.flipDown(previousTime[i], currentTime[i]);
+    }
+  });
+
+  // Schedule the next update exactly at the next minute boundary.
+  const delay =
+    60000 -
+    (now.getSeconds() * 1000 + now.getMilliseconds());
+
+  setTimeout(updateClock, delay);
+}
+
+updateClock();
+
+    </script>
+  </body>
+</html>
