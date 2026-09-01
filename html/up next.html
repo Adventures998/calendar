@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Itim&family=Quicksand&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Inter&family=Tilt+Neon&display=swap");
+
+    .up_next_back1 {
+      position: relative;
+      clip-path: path("m 74 0 c -74 0 -74 150 0 150 h 420 c 10 0 50 0 50 -70 h 20 c 50 0 50 -80 0 -80 z");
+      background-color: rgba(100, 100, 150, 0.8);
+      width: 650px;
+      height: 150px;
+      box-shadow:
+        12px 12px 16px 0 rgba(255, 255, 255, 0.6) inset,
+        -8px -8px 12px 0 rgba(0, 0, 0, 0.5) inset;
+    }
+
+    .up_next_back2 {
+      position: relative;
+      border-radius: 2px 30px 30px 2px;
+      background: rgba(255, 226, 113, 0.8);
+      top: -140px;
+      left: 165px;
+      width: 420px;
+      height: 60px;
+      box-shadow:
+        inset 0 6px 12px rgba(0, 0, 0, 0.35),
+        inset 0 -4px 8px rgba(255, 255, 255, 0.4);
+    }
+
+    .up_next_image {
+      position: relative;
+      width: 130px;
+      height: 130px;
+      top: -200px;
+      left: 28px;
+      border-radius: 55px 2px 2px 55px;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
+
+    .up_next_main_text {
+      position: relative;
+      top: -325px;
+      left: 170px;
+      font-size: 45px;
+      text-align: left;
+      font-family: "Quicksand", sans-serif;
+    }
+
+    .up_next_next_text {
+      position: relative;
+      top: -315px;
+      left: 160px;
+      font-size: 35px;
+      text-align: left;
+      font-family: "Quicksand", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="up_next">
+
+    <div class="up_next_back1"></div>
+    <div class="up_next_back2"></div>
+
+    <div id="activityImage" class="up_next_image"></div>
+
+    <div id="currentActivity" class="up_next_main_text">
+      Loading...
+    </div>
+
+    <div id="nextActivity" class="up_next_next_text">
+      Loading...
+    </div>
+
+  </div>
+
+  <script>
+  // Your schedule JSON
+  const scheduleURL =
+    "https://raw.githubusercontent.com/Adventures998/calendar/refs/heads/main/schedule.json";
+
+  // Direct image URL
+  const transitionImage =
+    "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/relax.png";
+
+
+  // Convert "09:45 - 11:30" into minutes after midnight
+  function parseTime(timeString) {
+    const parts = timeString
+      .replace(/\s/g, "")
+      .split("-");
+
+    const start = parts[0];
+    const end = parts[1];
+
+    function toMinutes(time) {
+      const [hours, minutes] = time.split(":").map(Number);
+      return hours * 60 + minutes;
+    }
+
+    return {
+      start: toMinutes(start),
+      end: toMinutes(end)
+    };
+  }
+
+
+  // Get current time including seconds
+  function getCurrentTime() {
+    const now = new Date();
+
+    return (
+      now.getHours() * 60 +
+      now.getMinutes() +
+      now.getSeconds() / 60
+    );
+  }
+
+
+  // Convert minutes back into HH:MM
+  function formatTime(minutes) {
+    const hours = Math.floor(minutes / 60);
+    const mins = Math.floor(minutes % 60);
+
+    return `${String(hours).padStart(2, "0")}:${String(mins).padStart(2, "0")}`;
+  }
+
+
+  async function updateSchedule() {
+    try {
+      const response = await fetch(scheduleURL);
+
+      if (!response.ok) {
+        throw new Error("Could not load schedule");
+      }
+
+      const data = await response.json();
+      const schedule = data.schedule;
+
+      const currentTime = getCurrentTime();
+
+      const currentActivityElement =
+        document.getElementById("currentActivity");
+
+      const nextActivityElement =
+        document.getElementById("nextActivity");
+
+      const imageElement =
+        document.getElementById("activityImage");
+
+
+      /*
+       * ============================================
+       * CHECK TRANSITIONS
+       * ============================================
+       *
+       * Every schedule boundary gets a 2-minute
+       * transition:
+       *
+       * 1 minute BEFORE
+       * +
+       * 1 minute AFTER
+       *
+       * Example:
+       *
+       * 09:00 boundary
+       * Transition = 08:59 → 09:01
+       */
+
+
+      for (let i = 0; i < schedule.length; i++) {
+
+        const time = parseTime(schedule[i].time);
+
+
+        // --------------------------------------------
+        // TRANSITION AROUND START TIME
+        // --------------------------------------------
+
+        if (
+          currentTime >= time.start - 1 &&
+          currentTime < time.start + 1
+        ) {
+
+          currentActivityElement.textContent =
+            "Transition";
+
+          nextActivityElement.textContent =
+            `${formatTime(time.start)} - ${schedule[i].name}`;
+
+          imageElement.style.backgroundImage =
+            `url("${transitionImage}")`;
+
+          return;
+        }
+
+
+        // --------------------------------------------
+        // TRANSITION AROUND END TIME
+        // --------------------------------------------
+
+        if (
+          currentTime >= time.end - 1 &&
+          currentTime < time.end + 1
+        ) {
+
+          currentActivityElement.textContent =
+            "Transition";
+
+
+          // Find the next activity
+          if (i + 1 < schedule.length) {
+
+            const nextActivity =
+              schedule[i + 1];
+
+            const nextTime =
+              parseTime(nextActivity.time);
+
+            nextActivityElement.textContent =
+              `${formatTime(nextTime.start)} - ${nextActivity.name}`;
+
+          } else {
+
+            nextActivityElement.textContent =
+              "Midnight Refresh";
+          }
+
+
+          imageElement.style.backgroundImage =
+            `url("${transitionImage}")`;
+
+          return;
+        }
+      }
+
+
+      /*
+       * ============================================
+       * FIND CURRENT ACTIVITY
+       * ============================================
+       */
+
+      let currentIndex = -1;
+
+      for (let i = 0; i < schedule.length; i++) {
+
+        const time =
+          parseTime(schedule[i].time);
+
+
+        // Activity only runs between:
+        //
+        // start + 1 minute
+        //
+        // and
+        //
+        // end - 1 minute
+
+        if (
+          currentTime >= time.start + 1 &&
+          currentTime < time.end - 1
+        ) {
+
+          currentIndex = i;
+          break;
+        }
+      }
+
+
+      /*
+       * ============================================
+       * NOTHING CURRENTLY HAPPENING
+       * ============================================
+       */
+
+      if (currentIndex === -1) {
+
+        currentActivityElement.textContent =
+          "Nothing scheduled";
+
+        nextActivityElement.textContent =
+          "";
+
+        imageElement.style.backgroundImage =
+          "none";
+
+
+        // Find next upcoming activity
+        for (let i = 0; i < schedule.length; i++) {
+
+          const time =
+            parseTime(schedule[i].time);
+
+
+          if (time.start > currentTime) {
+
+            currentActivityElement.textContent =
+              "Next up: " + schedule[i].name;
+
+            nextActivityElement.textContent =
+              `${formatTime(time.start)} - ${schedule[i].name}`;
+
+            imageElement.style.backgroundImage =
+              `url("${schedule[i].image}")`;
+
+            break;
+          }
+        }
+
+        return;
+      }
+
+
+      /*
+       * ============================================
+       * CURRENT ACTIVITY
+       * ============================================
+       */
+
+      const currentActivity =
+        schedule[currentIndex];
+
+      currentActivityElement.textContent =
+        currentActivity.name;
+
+      imageElement.style.backgroundImage =
+        `url("${currentActivity.image}")`;
+
+
+      /*
+       * ============================================
+       * NEXT ACTIVITY
+       * ============================================
+       */
+
+      const nextIndex =
+        currentIndex + 1;
+
+
+      if (nextIndex < schedule.length) {
+
+        const nextActivity =
+          schedule[nextIndex];
+
+        const nextTime =
+          parseTime(nextActivity.time);
+
+        nextActivityElement.textContent =
+          `${formatTime(nextTime.start)} ${nextActivity.name}`;
+
+      } else {
+
+        nextActivityElement.textContent =
+          "Nothing";
+      }
+
+    } catch (error) {
+
+      console.error(error);
+
+      document.getElementById("currentActivity").textContent =
+        "Unable to load schedule";
+
+      document.getElementById("nextActivity").textContent =
+        "";
+    }
+  }
+
+
+  // Run immediately
+  updateSchedule();
+
+
+  // Check every 10 seconds
+  setInterval(updateSchedule, 10000);
+
+</script>
+
+
+</body>
+
+</html>
