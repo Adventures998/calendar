@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .gradient-underline {
+      padding-bottom: 2px;
+      position: relative;
+      display: table;
+      margin: auto;
+    }
+
+    .gradient-underline::after {
+      background: linear-gradient(
+        130deg,
+        #ff7a18,
+        #af002d 41.07%,
+        #319197 76.05%
+      );
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+    }
+
+    .menu_item {
+      font-family: "Quicksand", sans-serif;
+      font-size: 25px;
+      background-color: rgba(0, 0, 10, 0.6);
+      color: aliceblue;
+      border-radius: 50px;
+      width: 250px;
+      height: 200px;
+      padding: 9px;
+      margin: 15px;
+      text-align: center;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      box-shadow:
+        12px 12px 16px 0 rgba(255, 255, 255, 0.6) inset,
+        -8px -8px 12px 0 rgba(0, 0, 0, 0.5) inset;
+    }
+
+    .menu_item img {
+      padding-top: 5px;
+      width: 230px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu_item" id="send_button">
+    <p class="gradient-underline" id="title"></p>
+    <img id="image">
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const title = params.get("title");
+    const image = params.get("image");
+
+
+    document.getElementById("title").textContent = title;
+    document.getElementById("image").src = image;
+
+    document.getElementById("send_button").addEventListener("click", () => {
+      window.parent.postMessage(
+        {
+          type: "ACTION_PANEL_CLICKED",
+          action: title
+        },
+        "*"
+      );
+    });
+  </script>
+
+</body>
+</html>
