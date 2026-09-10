@@ -1,7 +1,7 @@
 {
   "latitude": 50.79918,
   "longitude": -0.5374603,
-  "generationtime_ms": 3.457784652709961,
+  "generationtime_ms": 7.319450378417969,
   "utc_offset_seconds": 3600,
   "timezone": "Europe/London",
   "timezone_abbreviation": "GMT+1",
@@ -16,11 +16,11 @@
     "weathercode": "wmo code"
   },
   "current_weather": {
-    "time": "2026-09-10T10:00",
+    "time": "2026-09-10T14:00",
     "interval": 900,
-    "temperature": 15.9,
-    "windspeed": 11.2,
-    "winddirection": 268,
+    "temperature": 17.5,
+    "windspeed": 23.8,
+    "winddirection": 214,
     "is_day": 1,
     "weathercode": 3
   },
@@ -42,8 +42,8 @@
       "2026-09-16"
     ],
     "temperature_2m_max": [
-      18.3,
-      21.0,
+      18.4,
+      21.5,
       19.9,
       21.5,
       21.2,
@@ -52,16 +52,16 @@
     ],
     "temperature_2m_min": [
       11.1,
-      16.0,
-      12.8,
+      16.8,
+      12.3,
       15.4,
       14.6,
       14.0,
       10.8
     ],
     "precipitation_sum": [
-      0.1,
-      0.9,
+      0.0,
+      1.5,
       0.5,
       2.2,
       0.3,
