@@ -57,8 +57,13 @@
     },
     {
       "name": "Freedom",
-      "time": "16:50 - 20:00",
+      "time": "16:50 - 18:00",
       "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/end.jpg"
+    },
+        {
+      "name": "Bike",
+      "time": "18:00 - 20:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/bike_small.png"
     }
   ]
 }
