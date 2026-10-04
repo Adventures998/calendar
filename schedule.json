@@ -64,6 +64,11 @@
       "name": "Bike",
       "time": "18:00 - 20:00",
       "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/bike_small.png"
+      },
+        {
+      "name": "Midnight Refresh",
+      "time": "23:59 - 0:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/bike_small.png"
     }
   ]
 }
