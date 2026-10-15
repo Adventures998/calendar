@@ -1,0 +1,76 @@
+[
+  {
+    "activity": "Breakfast",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/Breakfast.png"
+    ]
+  },
+  {
+    "activity": "Travel",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/walk.png"
+    ]
+  },
+  {
+    "activity": "Work",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing%20work.jpg"
+    ]
+  },
+  {
+    "activity": "Rest",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/break.jpg",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/dance.png"
+    ]
+  },
+  {
+    "activity": "Lunch",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lunch.png"
+    ]
+  },
+  {
+    "activity": "Freedom",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/end.png"
+    ]
+  },
+  {
+    "activity": "Tidy",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/motivation.jpg"
+    ]
+  },
+  {
+    "activity": "Dinner",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lunch.png"
+    ]
+  },
+  {
+    "activity": "Evening",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lake.png"
+    ]
+  },
+  {
+    "activity": "Supper",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/sofa.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/cafe.png"
+    ]
+  },
+  {
+    "activity": "Goodnight",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/Midnight.png"
+    ]
+  },
+  {
+    "activity": "Bike",
+    "image_links": [
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/bike.png"
+    ]
+  }
+]
