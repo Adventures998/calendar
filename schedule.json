@@ -38,17 +38,17 @@
     {
       "name": "Motivation",
       "time": "13:45 - 14:00",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/18.jpg"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/18.png"
     },
     {
       "name": "Work",
       "time": "14:00 - 14:30",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/04.jpg"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/04.png"
     },
     {
       "name": "Motivation",
       "time": "14:30 - 14:45",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/02.jpg"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/02.png"
     },
     {
       "name": "Work",
@@ -63,7 +63,7 @@
         {
       "name": "Bike",
       "time": "18:00 - 20:00",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/bike_small.png"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/17.png"
       }
   ]
 }
