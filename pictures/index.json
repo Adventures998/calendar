@@ -2,26 +2,34 @@
   {
     "activity": "Breakfast",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/Breakfast.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/01.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/03.png"
     ]
   },
   {
     "activity": "Travel",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/walk.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/08.png"
     ]
   },
   {
     "activity": "Work",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing%20work.jpg"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/04.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/16.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/14.png"
+
     ]
   },
   {
     "activity": "Rest",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/break.jpg",
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/dance.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/19.jpg",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/05.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/15.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/09.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/10.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/06.png"
     ]
   },
   {
@@ -39,38 +47,43 @@
   {
     "activity": "Tidy",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/motivation.jpg"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/27.jpg"
     ]
   },
   {
     "activity": "Dinner",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lunch.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/21.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/22.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/23.png"
     ]
   },
   {
     "activity": "Evening",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lake.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/02.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/18.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/12.png",
     ]
   },
   {
     "activity": "Supper",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/sofa.png",
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/cafe.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/07.png",
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/11.png"
     ]
   },
   {
     "activity": "Goodnight",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/Midnight.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/25.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/26.png"
     ]
   },
   {
     "activity": "Bike",
     "image_links": [
-      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/bike.png"
+      "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/17.png"
     ]
   }
 ]
