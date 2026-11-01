@@ -1,0 +1,85 @@
+{
+  "Breakfast": [
+    "01.png",
+    "03.png",
+    "40.png"
+  ],
+  "Event": [
+    "02.png",
+    "36.png",
+    "34.png",
+    "49.png",
+    "12.png",
+    "38.png"
+  ],
+  "Work": [
+    "04.png",
+    "35.png",
+    "14.png"
+  ],
+  "Between": [
+    "05.png",
+    "15.png",
+    "19.png"
+  ],
+  "Work Break": [
+    "10.png",
+    "28.png",
+    "08.png"
+  ],
+  "Supper": [
+    "07.png",
+    "11.png",
+    "39.png"
+  ],
+  "Home Break": [
+    "42.png",
+    "09.png"
+  ],
+  "Work Get Ready": [
+    "13.png"
+  ],
+  "Bike": [
+    "17.png"
+  ],
+  "Shower": [
+    "20.png",
+    "30.png",
+    "47.png"
+  ],
+  "Dinner": [
+    "21.png",
+    "22.png",
+    "23.png"
+  ],
+  "Bedtime": [
+    "25.png",
+    "43.png",
+    "26.png"
+  ],
+  "Clean": [
+    "27.png",
+    "41.png"
+  ],
+  "Mute": [
+    "24.png"
+  ],
+  "Work Travel": [
+    "29.png",
+    "16.png",
+    "37.png"
+  ],
+  "Wake": [
+    "48.png",
+    "32.png",
+    "31.png"
+  ],
+  "Work End": [
+    "18.png"
+  ],
+  "Work Lunch": [
+    "45.png",
+    "44.png",
+    "46.png"
+  ]
+}
