@@ -1,69 +1,139 @@
 {
   "schedule": [
     {
-      "name": "Wake Up Pants",
-      "time": "06:00 - 07:00",
-      "image": "https://i.postimg.cc/CK2ShNK3/Inflatable-Wake-Up-Nappy.jpg"
+      "name": "Wake",
+      "time": "06:00-07:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/31.png"
     },
     {
       "name": "Breakfast",
-      "time": "07:00-08:00",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/Breakfast.png"
+      "time": "07:00-07:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/01.png"
     },
     {
-      "name": "Break",
+      "name": "Clean",
+      "time": "07:30-07:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/41.png"
+    },
+    {
+      "name": "Work Get Ready",
+      "time": "07:45-08:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/13.png"
+    },
+    {
+      "name": "Work Travel",
       "time": "08:00-08:15",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/break.jpg"
-    },
-    {
-      "name": "Standing Work",
-      "time": "08:15-09:30",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing work.jpg"
-    },
-    {
-      "name": "Break",
-      "time": "09:30-09:45",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/break.jpg"
-    },
-    {
-      "name": "Supported Standing",
-      "time": "09:45 - 11:30",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing work.jpg"
-    },
-    {
-      "name": "Lunch",
-      "time": "11:30 - 13:45",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/lunch.png"
-    },
-    {
-      "name": "Motivation",
-      "time": "13:45 - 14:00",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/18.png"
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/29.png"
     },
     {
       "name": "Work",
-      "time": "14:00 - 14:30",
+      "time": "08:15-09:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/14.png"
+    },
+    {
+      "name": "Work Break",
+      "time": "09:30-09:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/10.png"
+    },
+    {
+      "name": "Work",
+      "time": "09:45-11:00",
       "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/04.png"
     },
     {
-      "name": "Motivation",
-      "time": "14:30 - 14:45",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/02.png"
+      "name": "Work Break",
+      "time": "11:00-11:15",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/08.png"
     },
     {
       "name": "Work",
-      "time": "14:45 - 16:50",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/standing work.jpg"
+      "time": "11:15-12:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/04.png"
     },
     {
-      "name": "Freedom",
-      "time": "16:50 - 18:00",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/end.jpg"
+      "name": "Work Lunch",
+      "time": "12:30-13:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/44.png"
     },
-        {
-      "name": "Bike",
-      "time": "18:00 - 20:00",
-      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/17.png"
-      }
+    {
+      "name": "Clean",
+      "time": "13:45-14:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/41.png"
+    },
+    {
+      "name": "Work Travel",
+      "time": "14:00-14:15",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/16.png"
+    },
+    {
+      "name": "Work",
+      "time": "14:15-15:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/35.png"
+    },
+    {
+      "name": "Work Break",
+      "time": "15:30-15:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/28.png"
+    },
+    {
+      "name": "Work",
+      "time": "15:45-17:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/04.png"
+    },
+    {
+      "name": "Work End",
+      "time": "17:00-17:15",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/18.png"
+    },
+    {
+      "name": "Home Break",
+      "time": "17:15-18:00",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/09.png"
+    },
+    {
+      "name": "Dinner",
+      "time": "18:00-19:15",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/23.png"
+    },
+    {
+      "name": "Clean",
+      "time": "19:15-19:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/41.png"
+    },
+    {
+      "name": "Home Break",
+      "time": "19:30-19:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/09.png"
+    },
+    {
+      "name": "Travel",
+      "time": "19:45-20:00",
+      "image": ""
+    },
+    {
+      "name": "Event",
+      "time": "20:00-21:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/34.png"
+    },
+    {
+      "name": "Home Break",
+      "time": "21:30-21:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/09.png"
+    },
+    {
+      "name": "Supper",
+      "time": "21:45-22:15",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/07.png"
+    },
+    {
+      "name": "Clean",
+      "time": "22:15-22:30",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/27.png"
+    },
+    {
+      "name": "Bedtime",
+      "time": "22:30-22:45",
+      "image": "https://raw.githubusercontent.com/Adventures998/calendar/main/pictures/26.png"
+    }
   ]
 }
