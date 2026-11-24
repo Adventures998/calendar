@@ -257,7 +257,64 @@
     "normal": [],
     "unsafe": []
   },
-  "Prepare For Christine": {
+  "Get Meal": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []
+      },
+  "Christine Visit": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []
+      },
+  "Personal Care": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []
+      },
+    "Care Stocktake": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []
+      },
+  "Get Dressed": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+  "Life Admin": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+  "Online Shopping": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+  "Outside Shopping": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+  "External Appointment": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+    "Important Appointment": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+    "Critical Appointment": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []      },
+  
+  "Leave for Train Station": {
+    "safe": [],
+    "normal": [],
+    "unsafe": [] },
+  "Prepare for Appointment": {
+    "safe": [],
+    "normal": [],
+    "unsafe": []  },
+  "Planning for Appointment": {
     "safe": [],
     "normal": [],
     "unsafe": []
